@@ -111,8 +111,8 @@ class RecetaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Receta $receta)
-    {
-        //
+    {       
+        return view('recetas.show')->with('receta', $receta);
     }
 
     /**
