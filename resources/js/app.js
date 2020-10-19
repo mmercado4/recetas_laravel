@@ -21,6 +21,8 @@ window.Vue = require('vue');
 
 //Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+Vue.config.ignoredElements = ['trix-editor', 'trix-toolbar'];
+
 Vue.component('fecha-receta', require('./components/FechaReceta.vue').default);
 
 /**

@@ -13,12 +13,12 @@ use Intervention\Image\Facades\Image;
 class RecetaController extends Controller
 {
     /**
-     * Metemos un métdoso constructor para validar que está logueado
+     * Metemos un método constructor para validar que está logueado
      */
 
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => 'show']);
     }
     
     /**
